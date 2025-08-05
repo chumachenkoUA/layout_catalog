@@ -19,6 +19,7 @@
     width: fit-content;
     align-self: center;
     margin-top: 16px;
+    transition: color 0.3s ease-in-out;
   }
 
   &:hover &__link {
@@ -41,6 +42,7 @@
     font-weight: 500;
     line-height: 18px;
     margin: 40px 0 4px;
+    transition: color 0.3s ease-in-out;
   }
 
   &:hover &__title {
@@ -70,7 +72,6 @@
   }
 
   &__button-link {
-    // width: fit-content;\
     box-sizing: border-box;
     text-decoration: none;
     display: flex;
@@ -86,12 +87,13 @@
     text-align: center;
     text-transform: uppercase;
     color: $white-accent;
-    background: $blue-accent;
+    background-color: $blue-accent;
     border: 1px solid $blue-accent;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   }
 
   &__button-link:hover {
-    background: $white-accent;
+    background-color: $white-accent;
     color: $blue-accent;
   }
 }
